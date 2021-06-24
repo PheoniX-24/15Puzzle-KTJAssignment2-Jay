@@ -1,0 +1,236 @@
+html{
+    scroll-behavior: smooth;
+}   
+
+body {
+    background-image:linear-gradient(to right ,rgba(120, 0, 175, 0.712),rgba(169, 0, 175, 0.712)), url(../Images/bckgrd.jpg);
+    background-repeat: repeat;
+    font-family: 'Domine', serif;
+    color:white;
+}
+
+@media only screen and (max-width: 650px) {
+    body{
+      width: 110%;
+      transform: scale(0.75);
+      margin-left: -5%;
+      margin-top: -20%;
+    }
+    .cont-htp{
+        margin-right: -10%;
+    }
+    .header{
+        width:120%;
+    }
+  }
+
+.header {
+    width:100%;
+    padding-top:4vw;
+}
+
+.head-sub1 {
+    font-size: 30px;
+    font-weight:500;
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.head-main {
+    font-size: 50px;
+    font-weight:600;
+    text-align: center;
+    
+}
+
+.head-sub2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top:2.5vw;
+    margin-bottom: 20px;
+}
+
+.cont-htp {
+    margin-top: 1vw;
+    font-size: 20px;
+    text-align: right;
+}
+
+.howtp {
+    text-decoration: none;
+    font-family: 'Domine', serif;
+    color:white;
+}
+
+.cont-htp:hover {
+    color:gold;
+    transform: scale(1.1) translateX(-4.5vw);
+}
+
+.gset-Btn {
+    font-size: 20px;
+    font-family: 'Domine', serif;
+    color:white;
+    background-image: linear-gradient(to left bottom ,rgba(120, 0, 175, 0.8),rgba(169, 0, 175, 0.8));
+    text-align: center;
+    padding: 0.5vw 1vw;
+    border-radius: 0.75vw;
+    box-shadow: 0 0.25vw 0.75vw black;
+    border: 1px solid white;
+    margin-left:50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+}
+
+.gset-Btn:hover {
+    transform: translate(-50%,-3px);
+    box-shadow: 0 0.5vw 1vw black;
+}
+
+.gset-or {
+    font-size: 20px;
+    text-align: center;
+}
+
+.gset-cust-tit {
+    font-size: 20px;
+    text-align: center;
+}
+
+.gset-cust-dim {
+    text-align: center;
+}
+
+.gset-cust-dim-tit {
+    font-size: 20px;
+}
+
+.gset-cust-dim-inp{
+    font-family: 'Domine', serif;
+    width: 40px;
+    border-radius: 3px;
+}
+
+.gset-cust-dec{
+    text-align: center;
+}
+
+.gset-cust-dec-tit{
+    font-size: 20px;
+}
+
+#g-info {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: rgba(137, 43, 226, 0.6);
+    padding: 0px 20px;
+    width: fit-content;
+    margin-left:50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 3px solid rgba(137, 43, 226);
+    line-height: 5px;
+}
+
+.g-info-m-tit{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.g-info-t-tit{
+    display:inline-block;
+}
+
+#game-space{
+    background-color: rgba(137, 43, 226, 0.6);
+    width: 520px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    padding:5px 5px;
+    border-radius: 10px;
+    border: 3px solid rgba(137, 43, 226);
+}
+
+#g-btns{
+    background-color: rgba(137, 43, 226, 0.6);
+    width: 520px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    padding:5px 5px;
+    border-radius: 10px;
+    border: 3px solid rgba(137, 43, 226);
+    text-align: center;
+    margin-top:10px;
+    opacity:0;
+}
+
+.g-Btn {
+    display:inline-block;
+    font-size: 20px;
+    font-family: 'Domine', serif;
+    color:white;
+    width:250px;
+    background-color: rgba(137, 43, 226);
+    text-align: center;
+    padding: 0.5vw 1vw;
+    border-radius: 0.75vw;
+    box-shadow: 0 0.25vw 0.75vw black;
+    border: 1px solid white;
+}
+
+.g-Btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5vw 1vw black;
+}
+
+.HoverClass1:hover{
+    box-shadow: 0 0.5vw 1vw  black;
+}
+
+@keyframes moveAnimation{
+    0%   {transform: scale(0.75);}
+    70%  {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.lb-title{
+    font-size: 30px;
+    font-weight:500;
+    text-align: center;
+}
+
+#lb-display{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: rgba(137, 43, 226, 0.6);
+    padding: 0px 20px;
+    width: 480px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border: 3px solid rgba(137, 43, 226);
+    line-height: 5px;
+}
+
+#lb-name{
+    display: inline-block;
+    width:115px;
+}
+
+#lb-dim{
+    display: inline-block;
+    width:115px;
+}
+
+#lb-moves{
+    display: inline-block;
+    width:115px;
+}
+
+#lb-time{
+    display: inline-block;
+    width:115px;
+}

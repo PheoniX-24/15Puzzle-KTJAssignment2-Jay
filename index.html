@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Puzzle</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+    <body>
+
+        <div class="cont-htp"><a href="https://en.wikipedia.org/wiki/15_puzzle" class="howtp">HOW TO PLAY</a></div>
+        <header class="header">
+            <div class="head-sub1">CAN YOU SOLVE</div>
+            <div class="head-main">THE SLIDE PUZZLE?</div>
+            <div class="head-sub2">Give it a try and see if you can complete it faster than others!</div>
+        </header>
+
+        <section id="game-settings">
+            <button class="gset-Btn" onclick="classicBtn()">Play The Classic 15 Puzzle</button>
+            <p class="gset-or">--------------------&nbsp; OR &nbsp;--------------------</p>
+            <p class="gset-cust-tit">Create Your Own Customized Puzzle</p>
+            <div class="gset-cust">
+                <div class="gset-cust-dim">
+                    <p class="gset-cust-dim-tit">Define the Dimensions</p>
+                    <input type="number" class="gset-cust-dim-inp" id="dim1" placeholder="eg.4"> &nbsp;X&nbsp; <input type="number" class="gset-cust-dim-inp" id="dim2" placeholder="eg.4">
+                 </div>
+                <div class="gset-cust-dec">
+                   <p class="gset-cust-dec-tit">Numbers or Image?</p>
+                   <input type="radio"  name="decoration" value="number" onchange="n_i_deco()">
+                   <label for="number">Numbers</label>&nbsp;&nbsp;&nbsp;
+                   <input type="radio"  name="decoration" value="image" onchange="n_i_deco()">
+                   <label for="image">Image</label>
+                   <div id="image-sel"></div>
+                </div>
+                <button class="gset-Btn" onclick="createBtn()">Create</button>
+            </div>
+        </section>
+
+        <section id="game">
+            <div id="g-info">
+                <div class="g-info-m-tit">
+                    <p>Moves</p>
+                    <p id="g-moves">--</p>
+                </div>
+                <div class="g-info-t-tit">
+                    <p>Time</p>
+                    <p id="g-time">--</p>
+                </div>
+            </div>
+            <div id="game-space">
+                <p id="first-sel">Please choose what type of game you want above.</p>
+            </div>
+            <div id="g-btns">
+                <button class="g-Btn" onclick="startBtn()" >Start/Play Again</button>
+                <button class="g-Btn" onclick="pauseBtn()" >Pause/Unpause</button>
+            </div>
+        </section>
+
+        <section id="leaderboard">
+            <div class="lb-title">&#128081;LEADERBOARD&#128081;</div>
+            <div id="lb-display">
+                <div id="lb-name"><p>Name</p></p></div>
+                <div id="lb-dim"><p>Dimensions</p></div>
+                <div id="lb-moves"><p>Moves</p></div>
+                <div id="lb-time"><p>Time</p></div>
+            </div>
+        </section>
+
+
+        <script src="js/js.js"></script>
+    </body>
+</html>
