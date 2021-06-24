@@ -460,17 +460,19 @@ function gameWon(){
 
 function updateLB(){
     const n= parseInt(window.localStorage.getItem('n'))+1;
-    alert(n);
     const obj= {name: "username"+n, dim1: document.getElementById("dim1").value, dim2: document.getElementById("dim2").value, moves: parseInt(document.getElementById("g-moves").innerHTML), time: document.getElementById("g-time").innerHTML};
         window.localStorage.setItem(n,JSON.stringify(obj));
     window.localStorage.setItem('n',n);
 }
 
+
+if((window.localStorage.getItem('n'))==null){
+    window.localStorage.setItem('n',0);
+}
 //window.localStorage.setItem('n',0);
 //window.localStorage.clear();
 
     const no= parseInt(window.localStorage.getItem('n'));
-    //alert(no);
     const data = [];
     for(var i=1;i<=no;i++){
         data[i]=JSON.parse(window.localStorage.getItem(i));
